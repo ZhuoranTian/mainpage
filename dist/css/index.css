@@ -1,5 +1,28 @@
 .masthead {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.7) 75%, #000 100%),
-    url(../assets/img/bg-masthead.jpg);
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%), url(../../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      /* rgb(255, 255, 255) 15%, */
+      rgb(0, 0, 0) 100%), url(../../images/backgroundFooter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
