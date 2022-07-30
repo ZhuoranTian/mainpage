@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const debug = require('debug')('demo:httpsServer'); //开源日志工具。
 
-
+// redirect to https
 const httpServer = http.createServer((req, res) => {
   res.writeHead(301, {
     'Location': `https://${req.headers.host}${req.url}`
