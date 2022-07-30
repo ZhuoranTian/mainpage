@@ -1,5 +1,5 @@
 const express = require('express')
-const https = require('https')
+const http = require('http')
 const app = express()
 const port = 80
 const fs = require('fs');
@@ -15,8 +15,8 @@ const HTTPS_OPTOIN = {
 };
 
 //定义端口，开启服务
-const SSL_PORT = 443;
-const httpsServer = https.createServer(HTTPS_OPTOIN, app);
+const SSL_PORT = 80;
+const httpsServer = http.createServer(HTTPS_OPTOIN, app);
 httpsServer.listen(SSL_PORT, () => {
   console.log(`HTTPS Server is running on: https://localhost:${SSL_PORT}`);
 });
